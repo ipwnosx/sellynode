@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700");
+@import url("product-item.css");
+@import url("product-list.css");
+@import url("hero.css");
+@import url("header.css");
+
+/*
+  breakpoints:
+    small: 500px
+    medium: 768px
+    large: 992px
+*/
+
+:root {
+  --brand-color-h: 157;
+  --brand-color-s: 63%;
+  --brand-color-l: 42%;
+  --brand-color: hsl(
+    var(--brand-color-h),
+    var(--brand-color-s),
+    var(--brand-color-l)
+  );
+
+  --background-gradient: linear-gradient(
+    to right,
+    var(--brand-color),
+    hsl(
+      calc(var(--brand-color-h) + 20),
+      var(--brand-color-s),
+      var(--brand-color-l)
+    )
+  );
+
+  --box-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --box-shadow-2: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --box-shadow-3: 0 6px 16px rgba(0, 0, 0, 0.2);
+  --box-shadow-4: 0 8px 20px rgba(0, 0, 0, 0.2);
+  --box-shadow-5: 0 10px 24px rgba(0, 0, 0, 0.2);
+  --box-shadow-6: 0 12px 28px rgba(0, 0, 0, 0.2);
+
+  --easing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --header-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 90%);
+  line-height: 1.5;
+  color: hsl(0, 0%, 10%);
+
+  padding-bottom: 200px;
+
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+}

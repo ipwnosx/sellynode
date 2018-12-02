@@ -1,0 +1,23 @@
+body {
+  padding-top: var(--header-height);
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  transition: box-shadow 0.2s var(--easing-function);
+  z-index: 1;
+  background: var(--background-gradient);
+  padding: 0 32px;
+  height: var(--header-height);
+  color: hsla(0, 0%, 100%, 0.95);
+}
+
+.header.scrolled {
+  transition-duration: 1s;
+  box-shadow: var(--box-shadow-1);
+}

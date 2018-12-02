@@ -1,0 +1,10 @@
+.hero {
+  margin-bottom: -100px;
+  box-shadow: var(--box-shadow-1);
+  background: var(--background-gradient);
+  padding: 64px;
+  padding-bottom: calc(64px + 100px);
+  text-align: center;
+  font-size: 20px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
